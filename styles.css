@@ -15,6 +15,8 @@ html {
     scroll-behavior: smooth;
 }
 
+
+/*HEADER---------------------------------------*/
 .header {
     display: flex;
 }
@@ -23,10 +25,7 @@ html {
     background-color: #089132;
     width: 50%;
     color: white;
-    padding-left: 153px;
-    padding-top: 72px;
-    padding-right: 50px;
-    padding-bottom: 70px;
+    padding: 72px 50px 70px 120px;
 }
 
 .header-left h1 {
@@ -53,7 +52,7 @@ html {
     text-decoration: none;
     font-weight: 700;
     color: white;
-    font-size: 18px;
+    font-size: 19px;
     border: none;
     cursor: pointer;
 }
@@ -73,6 +72,7 @@ html {
 }
 
 
+/*DIV-2---------------------------------------*/
 .div-2 {
     display: flex;
     background: linear-gradient(
@@ -81,7 +81,6 @@ html {
         ),
         url(./images/img-2.jpg);
     background-size: cover;
-    /*filter: grayscale(1);*/
     padding: 55px 10%;
 }
 
@@ -110,6 +109,8 @@ html {
     color: #089132;
 }
 
+
+/*QUOTE---------------------------------------*/
 .quote {
     background-color: #089132;
     color: white;
@@ -139,6 +140,8 @@ html {
     top: 140px;
 }
 
+
+/*PRICING---------------------------------------*/
 .pricing {
     background-color: black;
     color: white;
@@ -202,7 +205,7 @@ html {
     background-color: white;
     padding: 14px 24px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 19px;
     cursor: pointer;
     transition: all ease .3s;
     margin-top: 36px;
@@ -228,7 +231,7 @@ html {
     background-color: #089132;
     padding: 14px 24px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 19px;
     cursor: pointer;
     transition: all ease .3s;
     color: white;
@@ -240,18 +243,23 @@ html {
     color: black;
 }
 
+
+/*ABOVE FOOTER AND FOOTER--------------------------*/
 .above-footer {
     display: flex;
+}
+
+.above-footer-left {
+    background: url(./images/img-3.jpg);
+    background-size: cover;
+    width: 50%;
 }
 
 .above-footer-right {
     background-color: white;
     width: 50%;
     color: black;
-    padding-left: 70px;
-    padding-top: 72px;
-    padding-right: 50px;
-    padding-bottom: 70px;
+    padding: 72px 50px 70px 70px;
 }
 
 .above-footer-right h1 {
@@ -271,14 +279,8 @@ html {
     margin-bottom: 60px;
 }
 
-.above-footer-left {
-    background: url(./images/img-3.jpg);
-    background-size: cover;
-    width: 50%;
-}
-
 footer {
-    padding: 50px;
+    padding: 40px;
     color: white; 
     background-color: black;
     display: flex;
@@ -286,3 +288,206 @@ footer {
     justify-content: center;
     font-weight: 700;
 }
+
+
+
+
+/*---------------------------------------------*/
+/*MEDIA QUERIES--------------------------------*/
+/*---------------------------------------------*/
+
+/*TABLETS--------------------------------------*/
+@media only screen 
+and (max-width: 768px)
+and (orientation : portrait) {
+    /*HEADER---------------------------------*/
+    .header-left {
+        padding: 48px 50px 45px 32px;
+    }
+
+    .start-reading-btn {
+        font-size: 19px;
+    }
+
+    /*DIV-2-----------------------------------*/
+    .div-2 {
+        padding: 30px 12%;
+    }
+
+    .div-2-left {
+        display: none;
+    }
+    
+    .div-2-right {
+        width: 100%;
+        background-color: white;
+        padding: 30px;
+    }
+
+    /*QUOTE------------------------------------*/
+    .quote {
+        padding: 85px 8.3% 80px 8.3%;
+    }
+    
+    .quote p {
+        padding: 0 40px;
+    }
+    
+    .quote img {
+        height: 45px;
+        width: 45px;
+    }
+    
+    .quote img:nth-child(1) {
+        position: relative;
+        top: 220px;
+    }
+
+    /*PRICING-----------------------------------*/
+    .pricing {
+        padding: 80px 2%;
+    }
+
+    .pricing h2 {
+        margin-bottom: 33px;
+        margin-left: 30px;
+    }
+    
+    .pricing p {
+        margin-bottom: 50px;
+        margin-left: 30px;
+    }
+    
+    .pricing-container-left,
+    .pricing-container-right {
+        padding: 45px 30px;
+    }
+
+    .pricing-container-left h3,
+    .pricing-container-right h3 {
+        font-size: 30px;
+        margin-bottom: 27px;
+    }
+
+    .pricing-container-left p,
+    .pricing-container-right p {
+        margin-left: 0;
+    }
+
+    .pricing-container-left-btn,
+    .pricing-container-right-btn {
+        font-size: 19px;
+        margin-top: 15px;
+    }
+
+    /*ABOVE FOOTER--------------------------*/
+    .above-footer {
+        background: url(./images/img-3.jpg);
+        background-size: cover;
+        padding: 40px;
+    }
+
+    .above-footer-left {
+        display: none;
+    }
+
+    .above-footer-right {
+        width: 100%;
+        padding: 50px;
+    }
+}
+
+@media only screen
+and (max-width: 1024px) 
+and (orientation: landscape) {
+    /*HEADER---------------------------------*/
+    .header-left {
+        padding: 55px 50px;
+    }
+
+    .start-reading-btn {
+        font-size: 19px;
+    }
+
+    /*DIV-2-----------------------------------*/
+    .div-2 {
+        padding: 60px 3%;
+    }
+    
+    .div-2-right {
+        padding: 30px;
+    }
+
+    /*QUOTE------------------------------------*/
+    .quote {
+        padding: 85px 8.3% 80px 8.3%;
+    }
+    
+    .quote p {
+        padding: 0 45px;
+    }
+    
+    .quote img {
+        height: 55px;
+        width: 55px;
+    }
+    
+    .quote img:nth-child(1) {
+        position: relative;
+        top: 137px;
+    }
+
+    /*PRICING-----------------------------------*/
+    .pricing {
+        padding: 70px 3% 80px 3%;
+    }
+
+    .pricing h2 {
+        margin-bottom: 33px;
+        margin-left: 30px;
+    }
+    
+    .pricing p {
+        margin-bottom: 60px;
+        margin-left: 30px;
+    }
+    
+    .pricing-container-left,
+    .pricing-container-right {
+        padding: 45px;
+    }
+
+    .pricing-container-left h3,
+    .pricing-container-right h3 {
+        font-size: 30px;
+        margin-bottom: 27px;
+    }
+
+    .pricing-container-left p,
+    .pricing-container-right p {
+        margin-bottom: 15px;
+        margin-left: 0;
+    }
+
+    .pricing-container-left-btn {
+        font-size: 19px;
+        margin-top: 3px;
+    }
+
+    .pricing-container-right-btn {
+        font-size: 19px;
+        margin-top: 15px;
+    }
+
+    /*ABOVE FOOTER--------------------------------*/
+    .above-footer-right {
+        padding: 60px 50px 60px 55px;
+    }
+}
+
+
+
+/*SMARTPHONES--------------------------------------*/
+/*@media only screen 
+and (max-width: 480px)
+and (orientation : portrait) {}*/
