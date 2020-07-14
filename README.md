@@ -2,7 +2,7 @@
 
 Landing page of an online reading group. 
 
-[Guilhermino Gomes](https://guilherminogomes.github.io/read-a-book-group/)
+[Read A Book Group](https://guilherminogomes.github.io/read-a-book-group/)
 
 ## Getting Started
 
