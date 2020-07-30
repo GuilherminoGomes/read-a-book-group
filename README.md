@@ -6,7 +6,7 @@ Landing page of an online reading group.
 
 ## Built With
 
-* HTML5
+* HTML
 * CSS
 
 ## License
